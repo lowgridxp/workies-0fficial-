@@ -1,0 +1,221 @@
+body {
+    background-image: url(images/!parallax_black_spacebg.png);
+    font-family: "Funnel Sans", sans-serif;
+}
+
+header{
+    max-width: 1500px;
+    margin: 60px auto;
+}
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 10px;
+}
+
+
+
+/* black border */
+
+header, .content2, .content1, .W1, .image-title, footer, .text1, .HOME, .SERVERS, .border2, .modal-header, .image {
+border: #ff0b0b00 2px solid;
+}
+
+header {
+
+  border: 2px solid transparent;
+  background:
+    linear-gradient(90deg, #151515 80%, #272829) padding-box, 
+    linear-gradient(to top, #151515, #FFD400 40%) border-box;
+}
+/* 1 page*/
+
+.content1 {
+  border-radius: 5px 30px 30px 30px;
+  border: 2px solid transparent;
+  z-index: 1;
+  
+  background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0)) padding-box, 
+    linear-gradient(90deg, #151515, #272829 40%) border-box;
+}
+
+
+
+.image{
+display: grid;
+height: 450px;
+}
+
+.text1 {
+    display: grid;
+    margin: 40px;
+   padding: 20px;
+  height: 10px;
+  min-height: 380px;
+}
+
+
+/* border radius black and white */
+
+
+
+
+footer {
+
+  border: 2px solid transparent;
+  background:
+    linear-gradient(90deg, #151515 80%, #272829) padding-box, 
+    linear-gradient(to top, #151515, #FFD400 40%) border-box;
+}
+
+/* height and width */
+
+
+
+
+header{
+    height: 70px;
+}
+
+.image-title {
+    height: 100px;
+    width: 100px;
+}
+
+
+.W1 {
+
+    height: 60px;
+}
+
+.content1{
+    height: 1500px;
+}
+
+
+
+
+/* remove link view */
+
+header a{
+    text-decoration: none;
+    color: inherit;        
+    display: block; 
+}
+/* text */
+
+
+header {
+    color: #74512D;
+}
+
+.text1, footer{
+padding: 5px;
+color: #FFF8F0;
+}
+.W1 h2 {
+color: #FFF8F0;
+margin: 10px;
+}
+
+.W2 {
+    padding: 10px;
+color: #FFF8F0;
+}
+
+/* image */
+
+
+ .content1 img {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.image-title img {
+      position: relative;
+      top: -13px;
+      left: 10px;
+    width: 100px;
+}
+
+
+
+.border2 img {
+    align-items: center;
+    width: 800px;
+}
+
+
+/* footer */
+footer {
+    margin: 1;
+    text-align: center;
+    width: auto;
+    height: 100px;
+}
+
+
+
+
+
+/* header buttons*/
+
+header {
+display: grid;
+grid-row: 1 / 2;
+grid-column: 1 / 2;
+}
+
+.HOME {
+    width: 100px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+display: grid;
+grid-row: 1 / 2;
+grid-column: 50;
+}
+
+
+.SERVERS {
+    width: 100px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+display: grid;
+grid-row: 1 / 2;
+grid-column: 49;
+}
+
+
+/* fade in Animations highligh text*/
+
+
+
+
+
+/* auto size border*/
+
+@media screen and (max-width: 768px) {
+  main {
+    margin:auto;
+    display: grid;
+    grid-gap: 10px;
+  }
+.content1 img{
+    width:400px;
+}
+
+.image{
+height: 300px;
+}
+
+}
+
+
+
+  

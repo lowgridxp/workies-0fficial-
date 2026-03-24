@@ -1,0 +1,275 @@
+body {
+    background-image: url(images/!parallax_black_spacebg.png);
+    font-family: "Funnel Sans", sans-serif;
+}
+
+header{
+    max-width: 1500px;
+    margin: 60px auto;
+}
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 10px;
+}
+
+
+
+/* black border */
+
+header, .content2, .content1, .W1, .image-title, footer, .text1, .HOME, .SERVERS, .border2, .modal-header {
+border: #ff0b0b00 2px solid;
+}
+
+header {
+
+  border: 2px solid transparent;
+  background:
+    linear-gradient(90deg, #151515 80%, #272829) padding-box, 
+    linear-gradient(to top, #151515, #FFD400 40%) border-box;
+}
+/* 1 page*/
+
+.content1 {
+  border-radius: 5px 30px 30px 30px;
+  border: 2px solid transparent;
+  z-index: 1;
+  
+  background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0)) padding-box, 
+    url('images/buratbg.jpg') center/cover no-repeat padding-box, 
+    linear-gradient(90deg, #686D76, #FFD400 40%) border-box;
+}
+
+
+.text1 {
+    display: grid;
+  align-content: end; /* Pushes all grid items to the bottom */
+   padding: 20px;
+  height: 10px;
+  min-height: 380px;
+}
+
+/* 2 page*/
+
+/* border radius black and white */
+.content2 {
+    
+  border-radius: 5px 30px 5px 5px;
+    border: 2px solid transparent;
+  background: 
+    linear-gradient(90deg, #151515 40%, rgb(0, 0, 0)) padding-box, 
+    linear-gradient(90deg, #272829, #FFD400 40%) border-box;
+}
+
+.W2 {
+      border-radius: 5px 25px 5px 5px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(90deg, #151515 40%, #272829) padding-box, 
+    linear-gradient(90deg, #151515, #FFD400 40%) border-box;
+}
+
+.border2{
+    gap: 200px;
+    padding: 5px;
+    width: 1000px;
+    display: flex;
+    place-items: center;
+    height: 400px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 100px;
+}
+
+.border2 img {
+    /* 2. THE IMAGE FIX */
+    flex-shrink: 0;             /* Prevents images from squishing */
+    scroll-snap-align: center;  /* Makes them "snap" into place */
+    height: 80%;               /* Keep them from hitting the edges */
+    object-fit: cover;
+}
+footer {
+
+  border: 2px solid transparent;
+  background:
+    linear-gradient(90deg, #151515 80%, #272829) padding-box, 
+    linear-gradient(to top, #151515, #FFD400 40%) border-box;
+}
+
+/* height and width */
+
+
+
+
+header{
+    height: 70px;
+}
+
+.image-title {
+    height: 100px;
+    width: 100px;
+}
+
+
+.W1 {
+
+    height: 60px;
+}
+
+.content1{
+    height: 500px;
+}
+
+
+.content2{
+    height: 500px;
+}
+
+/* remove link view */
+
+header a{
+    text-decoration: none;
+    color: inherit;        
+    display: block; 
+}
+/* text */
+
+
+header {
+    color: #74512D;
+}
+
+.text1, footer{
+padding: 5px;
+color: #FFF8F0;
+}
+.W1 h2 {
+color: #FFF8F0;
+margin: 10px;
+}
+
+.W2 {
+    padding: 10px;
+color: #FFF8F0;
+}
+
+/* image */
+
+
+.image-title img {
+      position: relative;
+      top: -13px;
+      left: 10px;
+    width: 100px;
+}
+
+
+.border2 img {
+    align-items: center;
+    width: 800px;
+}
+
+
+/* footer */
+footer {
+    margin: 1;
+    text-align: center;
+    width: auto;
+    height: 100px;
+}
+
+
+
+
+
+/* header buttons*/
+
+header {
+display: grid;
+grid-row: 1 / 2;
+grid-column: 1 / 2;
+}
+
+.HOME {
+    width: 100px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+display: grid;
+grid-row: 1 / 2;
+grid-column: 50;
+}
+
+
+.SERVERS {
+    width: 100px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+display: grid;
+grid-row: 1 / 2;
+grid-column: 49;
+}
+
+
+/* fade in Animations highligh text*/
+
+.HOME:hover a, .SERVERS:hover a {
+color: #FFF8F0;
+transition: color 0.3s ease;
+}
+
+
+
+.HOME:active a, .SERVERS:active a {
+color: #FFF8F0;
+transition: color 0.1s ease;
+}
+
+.content1:hover {
+  border-radius: 5px 30px 30px 30px;
+  border: 2px solid transparent;
+  z-index: 1;
+  
+  background: 
+    linear-gradient(to top, #3b2100 1%, rgba(0, 0, 0, 0)) padding-box, 
+    url('images/buratbg.jpg') center/cover no-repeat padding-box, 
+    linear-gradient(90deg, #FFD400, #FF8C00 40%) border-box;
+    transition: color 0.3s ease;
+}
+
+.content1:active {
+  border-radius: 5px 30px 30px 30px;
+  border: 2px solid transparent;
+  z-index: 1;
+  
+  background: 
+    linear-gradient(to top, #3b2100 1%, rgba(0, 0, 0, 0)) padding-box, 
+    url('images/buratbg.jpg') center/cover no-repeat padding-box, 
+    linear-gradient(90deg, #FFD400, #FF8C00 40%) border-box;
+    transition: color 0.3s ease;
+}
+
+
+
+/* auto size border*/
+
+@media screen and (max-width: 768px) {
+  main {
+    margin:auto;
+    display: grid;
+    grid-gap: 10px;
+  }
+  .content1, .content2 img, .content2{
+    width:460px;
+}
+
+
+}
+
+
+
+  
